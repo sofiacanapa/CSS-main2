@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>
+        <h3>Mi Robot Arduino</h3>
+    </title>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="contacto">
+        <h3>Contáctanos, te esperamos!</h3>
+        <p>Email: <a href="mailto:info@mirobotarduino.com">info@mirobotarduino.com</a></p>
+        <p>Teléfono: +1 555-123-4567</p>
+    </div>
+    <br>
+    <form>
+        <label for="mensaje">Escribe tu mensaje o duda:</label><br>
+        <textarea id="mensajeText" name="mensaje" rows="5" cols="40" placeholder="Escribe aquí..."></textarea><br><br>
+
+        <button type="button" onclick="enviarMensaje()">Enviar</button>
+    </form>
+
+    <li><a href="./index.html">Inicio</a></li>
+    <footer class="main-footer">
+        <br>
+        <h4>&copy; 2023 Mi Robot Arduino</h4>
+    </footer>
+    <script>
+        let mensaje = document.getElementById("mensajeText");
+        function enviarMensaje() {
+            alert("Mensaje enviado con un rotundo exito!");
+            mensaje.value = "";
+        }
+    </script>
+</body>
